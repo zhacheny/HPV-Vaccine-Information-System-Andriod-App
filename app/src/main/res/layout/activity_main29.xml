@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context="com.example.zhach.bme_finalpro.MainActivity"
+    tools:layout_editor_absoluteY="25dp">
+
+    <Button
+        android:id="@+id/button37"
+        android:layout_width="272dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:background="@drawable/bg_btn_3"
+        android:drawableRight="@drawable/ic_navigate_next_black_24dp"
+        android:text="2 I know this vascine is important. But I am not agree to be"
+        android:textColor="#fff"
+        app:layout_constraintBottom_toTopOf="@+id/button43"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button42" />
+
+    <Button
+        android:id="@+id/button41"
+        android:layout_width="208dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="14dp"
+        android:background="@drawable/bg_btn_2"
+        android:drawableRight="@drawable/ic_navigate_next_black_24dp"
+        android:text="4 Yes, in the next 6 months"
+        android:textColor="#fff"
+        app:layout_constraintBottom_toTopOf="@+id/button40"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button43" />
+
+    <Button
+        android:id="@+id/button40"
+        android:layout_width="202dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="18dp"
+        android:background="@drawable/bg_btn_2"
+        android:drawableRight="@drawable/ic_navigate_next_black_24dp"
+        android:text="5 Yes, the second dose will be given soon"
+        android:textColor="#fff"
+        app:layout_constraintBottom_toTopOf="@+id/horizontalScrollView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button41" />
+
+    <Button
+        android:id="@+id/button43"
+        android:layout_width="231dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="18dp"
+        android:background="@drawable/bg_btn_3"
+        android:drawableRight="@drawable/ic_navigate_next_black_24dp"
+        android:text="3 I have got to do something about this,what can I do"
+        android:textColor="#fff"
+        app:layout_constraintBottom_toTopOf="@+id/button41"
+        app:layout_constraintStart_toStartOf="@+id/button37"
+        app:layout_constraintTop_toBottomOf="@+id/button37" />
+
+    <Button
+        android:id="@+id/button42"
+        android:layout_width="171dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="17dp"
+        android:layout_marginEnd="98dp"
+        android:layout_marginLeft="91dp"
+        android:layout_marginRight="98dp"
+        android:layout_marginStart="91dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/bg_btn_3"
+        android:drawableRight="@drawable/ic_navigate_next_black_24dp"
+        android:text="1 Never"
+        android:textColor="#fff"
+        app:layout_constraintBottom_toTopOf="@+id/button37"
+        app:layout_constraintEnd_toEndOf="@+id/button37"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <HorizontalScrollView
+        android:id="@+id/horizontalScrollView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button40">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/buttonBook"
+                android:layout_width="120dp"
+                android:layout_height="80dp"
+                android:background="@drawable/bg_btn_4"
+                android:drawableTop="@drawable/ic_home_black_24dp"
+                android:text="Homw" />
+
+            <Button
+                android:id="@+id/buttonVisit"
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                android:background="@drawable/bg_btn_4"
+                android:drawableTop="@drawable/ic_av_timer_black_24dp"
+                android:text="Schedule" />
+
+            <Button
+                android:id="@+id/buttonResource"
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                android:background="@drawable/bg_btn_4"
+                android:drawableTop="@drawable/ic_help_outline_black_24dp"
+                android:text="Resource" />
+
+            <Button
+                android:id="@+id/buttonContact"
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                android:background="@drawable/bg_btn_4"
+                android:drawableTop="@drawable/ic_call_black_24dp"
+                android:text="contact" />
+
+            <Button
+                android:id="@+id/buttonMore"
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                android:background="@drawable/bg_btn_4"
+                android:drawableTop="@drawable/ic_more_horiz_black_24dp"
+                android:text="More" />
+
+        </LinearLayout>
+
+
+    </HorizontalScrollView>
+</android.support.constraint.ConstraintLayout>

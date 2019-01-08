@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.zhach.bme_finalpro.MainActivity"
+    tools:layout_editor_absoluteY="25dp">
+
+
+    <HorizontalScrollView
+        android:id="@+id/horizontalScrollView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/buttonBook"
+                android:layout_width="120dp"
+                android:layout_height="80dp"
+                android:background="@drawable/bg_btn_4"
+                android:drawableTop="@drawable/ic_home_black_24dp"
+                android:text="Homw" />
+
+            <Button
+                android:id="@+id/buttonVisit"
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                android:background="@drawable/bg_btn_4"
+                android:drawableTop="@drawable/ic_av_timer_black_24dp"
+                android:text="Schedule" />
+
+            <Button
+                android:id="@+id/buttonResource"
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                android:background="@drawable/bg_btn_4"
+                android:drawableTop="@drawable/ic_help_outline_black_24dp"
+                android:text="Resource" />
+
+            <Button
+                android:id="@+id/buttonContact"
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                android:background="@drawable/bg_btn_4"
+                android:drawableTop="@drawable/ic_call_black_24dp"
+                android:text="contact" />
+
+            <Button
+                android:id="@+id/buttonMore"
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                android:background="@drawable/bg_btn_4"
+                android:drawableTop="@drawable/ic_more_horiz_black_24dp"
+                android:text="More" />
+
+        </LinearLayout>
+
+
+    </HorizontalScrollView>
+
+    <EditText
+        android:id="@+id/edit1"
+        android:layout_width="375dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edit2"
+        android:layout_width="378dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="17dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edit1" />
+
+    <EditText
+        android:id="@+id/edit3"
+        android:layout_width="377dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="21dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/edit4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/edit4"
+        android:layout_width="382dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="214dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="216dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="@+id/save"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="11dp"
+        android:layout_marginLeft="55dp"
+        android:layout_marginStart="55dp"
+        android:background="@drawable/bg_btn_2"
+        android:text="Save"
+        android:textColor="#fff"
+        app:layout_constraintBottom_toTopOf="@+id/horizontalScrollView"
+        app:layout_constraintStart_toStartOf="@+id/horizontalScrollView" />
+
+    <Button
+        android:id="@+id/nextP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/save"
+        android:layout_marginBottom="11dp"
+        android:layout_marginEnd="67dp"
+        android:layout_marginRight="67dp"
+        android:background="@drawable/bg_btn_2"
+        android:text="NEXT"
+        android:textColor="#fff"
+        app:layout_constraintBottom_toTopOf="@+id/horizontalScrollView"
+        app:layout_constraintEnd_toEndOf="@+id/horizontalScrollView" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button11"
+        android:layout_marginBottom="27dp"
+        android:text="Start your plan now. Don't spend too long time planning. Tell friends/relatives your goals to provide support when the going gets tough."
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        app:layout_constraintBottom_toTopOf="@+id/save"
+        app:layout_constraintStart_toStartOf="parent" />
+</android.support.constraint.ConstraintLayout>

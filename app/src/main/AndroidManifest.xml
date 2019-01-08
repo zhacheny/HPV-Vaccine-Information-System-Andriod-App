@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.zhach.bme_finalpro">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:name="parseini"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Main2Activity"
+            android:label="Overview"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".Main3Activity"
+            android:label="About HPV"
+            android:parentActivityName=".Main2Activity" />
+        <activity
+            android:name=".Main4Activity"
+            android:label="HPV and Cancer"
+            android:parentActivityName=".Main3Activity" />
+        <activity
+            android:name=".Main5Activity"
+            android:label="Videos"
+            android:parentActivityName=".Main2Activity" />
+        <activity
+            android:name=".Main12Activity"
+            android:label="FAQ"
+            android:parentActivityName=".Main2Activity" />
+        <activity
+            android:name=".Main13Activity"
+            android:label="Is the HPV vaccine safe"
+            android:parentActivityName=".Main12Activity" />
+        <activity
+            android:name=".Main15Activity"
+            android:label="Join the Discussion"
+            android:parentActivityName=".Main2Activity" />
+        <activity
+            android:name=".Main16Activity"
+            android:label="What makes you vaccinate your son?"
+            android:parentActivityName=".Main15Activity" />
+        <activity
+            android:name=".Main17Activity"
+            android:label="Schedule a Visit" />
+        <activity
+            android:name=".Main18Activity"
+            android:label="Directions"
+            android:parentActivityName=".Main17Activity" />
+        <activity
+            android:name=".Main19Activity"
+            android:label="Resources"
+            android:parentActivityName=".Main17Activity" />
+        <activity
+            android:name=".Main20Activity"
+            android:label="List of clinics participating in CVP"
+            android:parentActivityName=".Main19Activity" />
+        <activity
+            android:name=".Main21Activity"
+            android:label="Search Results"
+            android:parentActivityName=".Main20Activity" />
+        <activity
+            android:name=".Main22Activity"
+            android:label="MANHATTAN"
+            android:parentActivityName=".Main21Activity" />
+        <activity
+            android:name=".Main31Activity"
+            android:label="To Do List"
+            android:parentActivityName=".Main30Activity" />
+        <activity
+            android:name=".Main32Activity"
+            android:label="Write down your goals"
+            android:parentActivityName=".Main30Activity" />
+        <activity
+            android:name=".Main33Activity"
+            android:label="Problems and Solutions"
+            android:parentActivityName=".Main30Activity" />
+        <activity
+            android:name=".Main34Activity"
+            android:label="Review your progress"
+            android:parentActivityName=".Main30Activity" />
+        <activity
+            android:name=".Main35Activity"
+            android:label="1"
+            android:parentActivityName=".Main29Activity" />
+        <activity
+            android:name=".Main36Activity"
+            android:label="2"
+            android:parentActivityName=".Main29Activity" />
+        <activity
+            android:name=".Main37Activity"
+            android:label="3"
+            android:parentActivityName=".Main29Activity" />
+        <activity
+            android:name=".Main38Activity"
+            android:label="4"
+            android:parentActivityName=".Main29Activity" />
+        <activity
+            android:name=".Main39Activity"
+            android:label="5"
+            android:parentActivityName=".Main29Activity" />
+        <activity
+            android:name=".Main6Activity"
+            android:label="Activities"
+            android:parentActivityName=".Main2Activity" />
+        <activity
+            android:name=".Main7Activity"
+            android:label="HPV Quiz"
+            android:parentActivityName=".Main6Activity" />
+        <activity
+            android:name=".Main8Activity"
+            android:label="Levels"
+            android:parentActivityName=".Main7Activity" />
+        <activity
+            android:name=".Main9Activity"
+            android:label="Level1"
+            android:parentActivityName=".Main8Activity" />
+        <activity
+            android:name=".Main10Activity"
+            android:label="Level1"
+            android:parentActivityName=".Main9Activity" />
+        <activity
+            android:name=".Main11Activity"
+            android:label="Decesion Making Scenario"
+            android:parentActivityName=".Main6Activity" />
+        <activity
+            android:name=".Main23Activity"
+            android:label="Schedule a visit"
+            android:parentActivityName=".Main17Activity" />
+        <activity
+            android:name=".Main24Activity"
+            android:label="Contact Us"
+            android:parentActivityName=".Main2Activity" />
+        <activity
+            android:name=".Main25Activity"
+            android:label="More"
+            android:parentActivityName=".Main2Activity" />
+        <activity
+            android:name=".Main26Activity"
+            android:label="About Us"
+            android:parentActivityName=".Main25Activity" />
+        <activity
+            android:name=".Main27Activity"
+            android:label="Privacy"
+            android:parentActivityName=".Main25Activity" />
+        <activity
+            android:name=".Main28Activity"
+            android:label="HPV Crossword"
+            android:parentActivityName=".Main6Activity" />
+        <activity
+            android:name=".Main29Activity"
+            android:label="Are you planning...?"
+            android:parentActivityName=".Main15Activity" />
+        <activity
+            android:name=".Main30Activity"
+            android:label="Action Planning"
+            android:parentActivityName=".Main6Activity" />
+        <activity
+            android:name=".Main42Activity"
+            android:label="Why do we give it at 11 or 12 years"
+            android:parentActivityName=".Main12Activity" />
+        <activity
+            android:name=".Main43Activity"
+            android:label="Comments"
+            android:parentActivityName=".Main16Activity" />
+        <activity
+            android:name=".Main14Activity"
+            android:label="Forget password"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".Main44Activity"
+            android:label="BROOKLYN"
+            android:parentActivityName=".Main21Activity" />
+        <activity
+            android:name=".Main45Activity"
+            android:label="QUEENS"
+            android:parentActivityName=".Main21Activity" />
+        <activity
+            android:name=".Main46Activity"
+            android:label="STATEN ISLAND"
+            android:parentActivityName=".Main21Activity" />
+        <activity android:name=".Main40Activity" />
+        <activity android:name=".Main41Activity" />
+        <activity
+            android:name=".Main47ActivityASKDoc"
+            android:label="@string/title_activity_main47_askdoc" />
+        <activity
+            android:name=".Main48ActivityDocAns"
+            android:label="@string/title_activity_main48_doc_ans" />
+        <activity
+            android:name=".Main49ViewPatientASKData"
+            android:label="@string/title_activity_main49_view_patient_askdata" />
+        <activity
+            android:name=".Calendar"
+            android:label="@string/title_activity_calendar" />
+        <activity android:name=".HomePage" />
+        <activity android:name=".intro"></activity>
+    </application>
+
+</manifest>

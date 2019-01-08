@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context="com.example.zhach.bme_finalpro.MainActivity"
+    tools:layout_editor_absoluteY="25dp">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="21dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline" />
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignStart="@+id/button2"
+            android:layout_marginTop="91dp"
+            android:background="@drawable/bg_btn_3"
+            android:drawableRight="@drawable/ic_navigate_next_black_24dp"
+            android:text="HPV Crossword"
+            android:textColor="#fff" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignStart="@+id/button3"
+            android:layout_marginTop="175dp"
+            android:background="@drawable/bg_btn_3"
+            android:drawableRight="@drawable/ic_navigate_next_black_24dp"
+            android:text="HPV Quiz"
+            android:textColor="#fff" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginBottom="197dp"
+            android:layout_marginEnd="22dp"
+            android:background="@drawable/bg_btn"
+            android:drawableRight="@drawable/ic_navigate_next_black_24dp"
+            android:text="Decesion Making Scenario           >"
+            android:textColor="#fff" />
+
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignStart="@+id/button3"
+            android:layout_marginBottom="121dp"
+            android:background="@drawable/bg_btn"
+            android:drawableRight="@drawable/ic_navigate_next_black_24dp"
+            android:text="Action Planing"
+            android:textColor="#fff" />
+
+    </RelativeLayout>
+
+
+    <HorizontalScrollView
+        android:id="@+id/horizontalScrollView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/buttonBook"
+                android:layout_width="120dp"
+                android:layout_height="80dp"
+                android:background="@drawable/bg_btn_4"
+                android:drawableTop="@drawable/ic_home_black_24dp"
+                android:text="Homw" />
+
+            <Button
+                android:id="@+id/buttonVisit"
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                android:background="@drawable/bg_btn_4"
+                android:drawableTop="@drawable/ic_av_timer_black_24dp"
+                android:text="Schedule" />
+
+            <Button
+                android:id="@+id/buttonResource"
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                android:background="@drawable/bg_btn_4"
+                android:drawableTop="@drawable/ic_help_outline_black_24dp"
+                android:text="Resource" />
+
+            <Button
+                android:id="@+id/buttonContact"
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                android:background="@drawable/bg_btn_4"
+                android:drawableTop="@drawable/ic_call_black_24dp"
+                android:text="contact" />
+
+            <Button
+                android:id="@+id/buttonMore"
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                android:background="@drawable/bg_btn_4"
+                android:drawableTop="@drawable/ic_more_horiz_black_24dp"
+                android:text="More" />
+
+        </LinearLayout>
+
+
+    </HorizontalScrollView>
+
+</android.support.constraint.ConstraintLayout>

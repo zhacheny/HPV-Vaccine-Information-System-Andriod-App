@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.zhach.bme_finalpro.MainActivity"
+    tools:layout_editor_absoluteY="25dp">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="13dp"
+            android:layout_marginTop="47dp"
+            android:text="Write down potential problems and how to overcome these."
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
+        <EditText
+            android:id="@+id/editText19"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/textView8"
+            android:layout_below="@+id/textView8"
+            android:layout_marginTop="19dp"
+            android:ems="10"
+            android:hint="Problems"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/editText20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/editText19"
+            android:layout_below="@+id/editText19"
+            android:ems="10"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/editText21"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/editText20"
+            android:layout_below="@+id/editText20"
+            android:ems="10"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/editText22"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/editText21"
+            android:layout_below="@+id/editText21"
+            android:layout_marginTop="14dp"
+            android:ems="10"
+            android:hint="Solutions"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/editText23"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/editText22"
+            android:layout_below="@+id/editText22"
+            android:ems="10"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/editText25"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/editText23"
+            android:layout_below="@+id/editText23"
+            android:ems="10"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editText25"
+            android:layout_centerHorizontal="true"
+            android:text="What's your contingency plan if things do not work well?"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
+        <Button
+            android:id="@+id/button13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/textView12"
+            android:layout_marginStart="52dp"
+            android:text="Save"
+            android:background="@drawable/bg_btn_2"
+            android:textColor="#fff"
+            />
+
+        <Button
+            android:id="@+id/button14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/textView12"
+            android:layout_marginEnd="43dp"
+            android:text="Finish"
+            android:background="@drawable/bg_btn_2"
+            android:textColor="#fff"/>
+    </RelativeLayout>
+
+    <HorizontalScrollView
+        android:id="@+id/horizontalScrollView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayout3">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/buttonBook"
+                android:layout_width="120dp"
+                android:layout_height="80dp"
+                android:background="@drawable/bg_btn_4"
+                android:drawableTop="@drawable/ic_home_black_24dp"
+                android:text="Homw" />
+
+            <Button
+                android:id="@+id/buttonVisit"
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                android:background="@drawable/bg_btn_4"
+                android:drawableTop="@drawable/ic_av_timer_black_24dp"
+                android:text="Schedule" />
+
+            <Button
+                android:id="@+id/buttonResource"
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                android:background="@drawable/bg_btn_4"
+                android:drawableTop="@drawable/ic_help_outline_black_24dp"
+                android:text="Resource" />
+
+            <Button
+                android:id="@+id/buttonContact"
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                android:background="@drawable/bg_btn_4"
+                android:drawableTop="@drawable/ic_call_black_24dp"
+                android:text="contact" />
+
+            <Button
+                android:id="@+id/buttonMore"
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                android:background="@drawable/bg_btn_4"
+                android:drawableTop="@drawable/ic_more_horiz_black_24dp"
+                android:text="More" />
+
+        </LinearLayout>
+
+
+    </HorizontalScrollView>
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context="com.example.zhach.bme_finalpro.MainActivity"
+    tools:layout_editor_absoluteY="25dp">
+
+    <HorizontalScrollView
+        android:id="@+id/horizontalScrollView"
+        android:layout_width="wrap_content"
+        android:layout_height="163dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        tools:layout_editor_absoluteY="482dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/buttonBook"
+                android:layout_width="120dp"
+                android:layout_height="80dp"
+                android:background="@drawable/bg_btn_4"
+                android:drawableTop="@drawable/ic_home_black_24dp"
+                android:text="Homw" />
+
+            <Button
+                android:id="@+id/buttonVisit"
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                android:background="@drawable/bg_btn_4"
+                android:drawableTop="@drawable/ic_av_timer_black_24dp"
+                android:text="Schedule" />
+
+            <Button
+                android:id="@+id/buttonResource"
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                android:background="@drawable/bg_btn_4"
+                android:drawableTop="@drawable/ic_help_outline_black_24dp"
+                android:text="Resource" />
+
+            <Button
+                android:id="@+id/buttonContact"
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                android:background="@drawable/bg_btn_4"
+                android:drawableTop="@drawable/ic_call_black_24dp"
+                android:text="contact" />
+
+            <Button
+                android:id="@+id/buttonMore"
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                android:background="@drawable/bg_btn_4"
+                android:drawableTop="@drawable/ic_more_horiz_black_24dp"
+                android:text="More" />
+
+        </LinearLayout>
+
+
+    </HorizontalScrollView>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout3"
+        android:layout_width="368dp"
+        android:layout_height="551dp"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
+
+        <Button
+            android:id="@+id/button38"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="95dp"
+            android:layout_marginTop="102dp"
+            android:background="@drawable/bg_btn_3"
+            android:textColor="#fff"
+            android:text="MANHATTAN" />
+
+        <Button
+            android:id="@+id/button43"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignStart="@+id/button38"
+            android:layout_marginTop="190dp"
+            android:background="@drawable/bg_btn_3"
+            android:textColor="#fff"
+            android:text="BROOKLYN" />
+
+        <Button
+            android:id="@+id/button44"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignStart="@+id/button38"
+            android:layout_marginBottom="233dp"
+            android:background="@drawable/bg_btn_2"
+            android:textColor="#fff"
+            android:text="QUEENS" />
+
+        <Button
+            android:id="@+id/button45"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignStart="@+id/button38"
+            android:layout_marginBottom="150dp"
+            android:background="@drawable/bg_btn_2"
+            android:textColor="#fff"
+            android:text="Staten Island" />
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

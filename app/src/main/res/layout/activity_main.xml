@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.zhach.bme_finalpro.MainActivity"
+    android:orientation="vertical">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="50dp"
+    android:background="#23283a"
+    >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="38.5sp"
+        android:textColor="#fff"
+        android:text="Welcome to HPV"
+        ></TextView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:layout_marginTop="25dp"
+        android:textColor="#fff"
+        android:text="This is a Phone Application for helping you learn about what is HPV and waht should you do"></TextView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+
+        android:orientation="horizontal"
+        android:gravity="center">
+        <Button
+            android:layout_margin="10dp"
+            android:id="@+id/learnmore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Learn More"
+            android:background="@drawable/bg_btn_2"
+            android:textColor="#fff"
+            />
+        <Button
+            android:layout_margin="10dp"
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sign Up Now!"
+            android:background="@drawable/bg_btn_3"
+            android:textColor="#fff"
+            />
+
+    </LinearLayout>
+</LinearLayout>
+    <LinearLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <EditText
+            android:id="@+id/username"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:hint="Username"
+            android:drawablePadding="10dp"
+            android:drawableLeft="@drawable/ic_person_outline_black_24dp"
+            />
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_lock_outline_black_24dp"
+            android:drawablePadding="10dp"
+            android:hint="Password"
+            android:inputType="textPassword"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+            <Button
+                android:id="@+id/button"
+                android:layout_margin="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_btn_2"
+                android:text="Log in"
+                android:drawableRight="@drawable/ic_polymer_black_24dp"
+                android:textColor="#fff"
+                />
+            <Button
+                android:id="@+id/button3"
+                android:layout_margin="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_btn"
+                android:text="Forgot password"
+                android:drawableRight="@drawable/ic_live_help_black_24dp"
+                android:textColor="#fff"
+                />
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context="com.example.zhach.bme_finalpro.MainActivity">
+
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout4"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+
+        <ImageButton
+            android:id="@+id/imageButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="45dp"
+            android:background="@drawable/bg_btn_3"
+            android:drawableTop="@drawable/ic_av_timer_black_24dp"
+            app:srcCompat="@android:drawable/ic_lock_silent_mode_off" />
+
+        <EditText
+            android:id="@+id/editText4"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/imageButton2"
+            android:layout_marginStart="38dp"
+            android:layout_toEndOf="@+id/imageButton2"
+            android:editable="true"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="HPV vaccine is cancer prevention."
+            android:textColor="#fff" />
+
+        <ImageButton
+            android:id="@+id/imageButton3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/editText4"
+            android:layout_marginTop="21dp"
+            android:background="@drawable/bg_btn_3"
+            android:drawableTop="@drawable/ic_av_timer_black_24dp"
+            app:srcCompat="@android:drawable/ic_lock_silent_mode_off" />
+
+        <EditText
+            android:id="@+id/editText5"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/imageButton3"
+            android:layout_alignStart="@+id/editText4"
+            android:editable="false"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="HPV can cause anal and mouthy"
+            android:textColor="#fff" />
+
+        <EditText
+            android:id="@+id/editText6"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="209dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="throat cancer. It can cause cancers"
+            android:textColor="#fff" />
+
+        <EditText
+            android:id="@+id/editText7"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/editText8"
+            android:editable="false"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="of cervix, vulua, vagina in woman." />
+
+        <EditText
+            android:id="@+id/editText8"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="198dp"
+            android:editable="false"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Cancers can be prevented if your" />
+
+        <EditText
+            android:id="@+id/editText9"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editText8"
+            android:layout_marginTop="-198dp"
+            android:editable="false"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="child is vaccinated." />
+
+    </RelativeLayout>
+
+
+    <HorizontalScrollView
+        android:id="@+id/horizontalScrollView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayout3">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/buttonBook"
+                android:layout_width="120dp"
+                android:layout_height="80dp"
+                android:background="@drawable/bg_btn_4"
+                android:drawableTop="@drawable/ic_home_black_24dp"
+                android:text="Home" />
+
+            <Button
+                android:id="@+id/buttonVisit"
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                android:background="@drawable/bg_btn_4"
+                android:drawableTop="@drawable/ic_av_timer_black_24dp"
+                android:text="Schedule" />
+
+            <Button
+                android:id="@+id/buttonResource"
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                android:background="@drawable/bg_btn_4"
+                android:drawableTop="@drawable/ic_help_outline_black_24dp"
+                android:text="Resource" />
+
+            <Button
+                android:id="@+id/buttonContact"
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                android:background="@drawable/bg_btn_4"
+                android:drawableTop="@drawable/ic_call_black_24dp"
+                android:text="contact" />
+
+            <Button
+                android:id="@+id/buttonMore"
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                android:background="@drawable/bg_btn_4"
+                android:drawableTop="@drawable/ic_more_horiz_black_24dp"
+                android:text="More" />
+
+        </LinearLayout>
+
+
+    </HorizontalScrollView>
+
+
+</android.support.constraint.ConstraintLayout>

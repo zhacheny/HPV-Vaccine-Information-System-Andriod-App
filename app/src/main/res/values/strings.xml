@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">BME_FinalPro</string>
+    <string name="title_activity_main47_askdoc">Main47ActivityASKDoc</string>
+    <string name="title_activity_main48_doc_ans">Main48ActivityDocAns</string>
+    <string name="title_activity_main49_view_patient_askdata">Main49ViewPatientASKData</string>
+    <string name="title_activity_calendar">Calendar</string>
+</resources>
